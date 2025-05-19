@@ -1,114 +1,543 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ramisha's Portfolio</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Arial, sans-serif;
-            margin: 0;
-            background: #f5f6fa;
-            color: #222;
-        }
-        header {
-            background: #4f8cff;
-            color: #fff;
-            padding: 2rem 0;
-            text-align: center;
-        }
-        nav {
-            margin-top: 1rem;
-        }
-        nav a {
-            color: #fff;
-            margin: 0 1rem;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        section {
-            max-width: 900px;
-            margin: 2rem auto;
-            background: #fff;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-        }
-        h2 {
-            color: #4f8cff;
-            margin-top: 0;
-        }
-        .projects {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-        }
-        .project {
-            background: #f0f4ff;
-            padding: 1rem;
-            border-radius: 6px;
-            box-shadow: 0 1px 4px rgba(0,0,0,0.03);
-        }
-        .contact-info {
-            list-style: none;
-            padding: 0;
-        }
-        .contact-info li {
-            margin-bottom: 0.5rem;
-        }
-        @media (max-width: 600px) {
-            section {
-                padding: 1rem;
-            }
-        }
-    </style>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ramisha Ikram | Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
     <header>
-        <h1>Ramisha</h1>
-        <p>Web Developer & Designer</p>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
+      <nav>
+        <div class="logo">RI</div>
+        <div class="nav-links">
+          <a href="#home" class="active">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="menu-btn">
+          <span></span>
+        </div>
+      </nav>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            Hi! I'm Ramisha, a passionate web developer with experience in building modern, responsive websites and web applications. I love turning ideas into reality using code and design.
-        </p>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="projects">
-            <div class="project">
-                <h3>Personal Blog</h3>
-                <p>A clean and minimal blog platform built with HTML, CSS, and JavaScript.</p>
-                <a href="#">View Project</a>
+    <main>
+      <section id="home" class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <h1>Ramisha Ikram</h1>
+            <div class="typewriter">
+              <span id="typewriter-text">Computer Engineer</span
+              ><span class="cursor">|</span>
             </div>
-            <div class="project">
-                <h3>Portfolio Website</h3>
-                <p>My own portfolio website showcasing my work and skills.</p>
-                <a href="#">View Project</a>
+            <p class="hero-description">
+              A highly motivated and detail-oriented Computer Engineering
+              student with expertise in various programming languages and
+              hands-on experience in developing web-based platforms, mobile
+              applications, and system applications.
+            </p>
+            <div class="hero-buttons">
+              <a href="#contact" class="btn primary">Get In Touch</a>
+              <a
+                href="assets/Ramisha Ikram CV.pdf"
+                class="btn secondary"
+                download
+                >Download CV</a
+              >
             </div>
-            <div class="project">
-                <h3>To-Do App</h3>
-                <p>A simple and intuitive to-do list app to manage daily tasks.</p>
-                <a href="#">View Project</a>
-            </div>
+          </div>
+          <!-- <div class="hero-image">
+            <div class="shape"></div>
+          </div> -->
         </div>
-    </section>
+      </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <ul class="contact-info">
-            <li>Email: <a href="mailto:ramisha@example.com">ramisha@example.com</a></li>
-            <li>GitHub: <a href="https://github.com/ramisha28" target="_blank">github.com/ramisha28</a></li>
-            <li>LinkedIn: <a href="#" target="_blank">LinkedIn Profile</a></li>
-        </ul>
-    </section>
-</body>
+      <section id="about" class="about">
+        <div class="container">
+          <h2 class="section-title">About Me</h2>
+          <div class="about-content">
+            <div class="about-image">
+              <img src="assets/profile.jpg" alt="Ramisha Ikram" />
+            </div>
+            
+            <div class="about-text">
+              <p>
+                Hello! I'm Ramisha Ikram, a Computer Engineering student at
+                COMSATS University Islamabad, Lahore Campus. I'm skilled in
+                various programming languages with hands-on experience in
+                developing web-based platforms, mobile applications, and system
+                applications.
+              </p>
+              <p>
+                I possess strong leadership abilities demonstrated through
+                volunteer work and event management. I'm eager to apply my
+                programming expertise and analytical thinking to innovative
+                projects while continuously learning and growing.
+              </p>
+              <p>
+                When I'm not coding, you can find me exploring new technologies,
+                working on graphic design projects, or participating in
+                community welfare initiatives to make a positive impact.
+              </p>
+              <div class="personal-info">
+                <div class="info-item">
+                  <span>Name:</span>
+                  <p>Ramisha Ikram</p>
+                </div>
+                <div class="info-item">
+                  <span>Email:</span>
+                  <p>ramishaikram72@gmail.com</p>
+                </div>
+                <div class="info-item">
+                  <span>From:</span>
+                  <p>Lahore, Pakistan</p>
+                </div>
+                <div class="info-item">
+                  <span>Education:</span>
+                  <p>BS Computer Engineering, COMSATS University</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="skills">
+        <div class="container">
+          <h2 class="section-title">My Skills</h2>
+          <div class="skills-content">
+            <div class="skill-category">
+              <h3>Programming Languages</h3>
+              <div class="skill-items">
+                <div class="skill-item">
+                  <div class="skill-icon"><i class="fab fa-js"></i></div>
+                  <h4>JavaScript</h4>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon"><i class="fab fa-python"></i></div>
+                  <h4>Python</h4>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon">
+                    <svg
+                      class="dart-svg-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="#0175C2"
+                        d="M4.105 4.105S9.158 1.58 11.684.316a3.079 3.079 0 0 1 1.481-.315c.766.047 1.677.788 1.677.788L24 9.948v9.789h-4.263V24H9.789l-9-9C.303 14.5 0 13.795 0 13.105c0-.319.18-.818.316-1.105l3.789-7.895zm.679.679v11.787c.002.543.021 1.024.498 1.508L10.204 23h8.533v-4.263L4.784 4.784zm12.055-.678c-.899-.896-1.809-1.78-2.74-2.643-.302-.267-.567-.468-1.07-.462-.37.011-.87.195-1.271.447-.885.55-3.351 1.957-5.458 3.214L14.16 4.105z"
+                      />
+                    </svg>
+                  </div>
+                  <h4>Dart</h4>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon"><i class="fas fa-code"></i></div>
+                  <h4>C/C++</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <h3>Web Development</h3>
+              <div class="skill-items">
+                <div class="skill-item">
+                  <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                  <h4>HTML5</h4>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                  <h4>CSS3</h4>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon"><i class="fab fa-react"></i></div>
+                  <h4>React</h4>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+                  <h4>Express.js</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <h3>Tools & Technologies</h3>
+              <div class="skill-items">
+                <div class="skill-item">
+                  <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                  <h4>Git</h4>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon"><i class="fas fa-database"></i></div>
+                  <h4>SQL</h4>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon"><i class="fab fa-android"></i></div>
+                  <h4>Flutter</h4>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon"><i class="fas fa-palette"></i></div>
+                  <h4>Graphic Design</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="projects">
+        <div class="container">
+          <h2 class="section-title">Projects</h2>
+          <div class="projects-filter">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web">Web</button>
+            <button class="filter-btn" data-filter="mobile">Mobile</button>
+            <button class="filter-btn" data-filter="systems">Systems</button>
+            <button class="filter-btn" data-filter="research">Research</button>
+          </div>
+
+          <div class="projects-grid">
+            <div class="project-card" data-category="web">
+              <div class="project-img">
+                <img
+                  src="https://images.unsplash.com/photo-1529074963764-98f45c47344b?q=80&w=2086&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Qatar Airways Management System"
+                />
+              </div>
+              <div class="project-content">
+                <h3>Qatar Airways Management System</h3>
+                <p>
+                  An airplane management system with features for flight
+                  scheduling, aircraft details, and crew assignments using
+                  RESTful APIs.
+                </p>
+                <div class="project-tags">
+                  <span>React</span>
+                  <span>Express.js</span>
+                  <span>REST APIs</span>
+                </div>
+                <div class="project-links">
+                  <!-- <a href="#" class="project-link"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a> -->
+                  <a href="https://github.com/ramisha28/Airplane-Management-System" class="project-link"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card" data-category="systems">
+              <div class="project-img">
+                <img
+                  src="https://images.unsplash.com/photo-1551302175-952301267d19?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Memory Allocation Visualizer"
+                />
+              </div>
+              <div class="project-content">
+                <h3>Memory Allocation Visualizer</h3>
+                <p>
+                  A Python-based GUI tool using Tkinter to demonstrate memory
+                  allocation techniques like First Fit, Best Fit, and Worst Fit
+                  with interactive visualization.
+                </p>
+                <div class="project-tags">
+                  <span>Python</span>
+                  <span>Tkinter</span>
+                  <span>GUI</span>
+                </div>
+                <div class="project-links">
+                  <!-- <a href="#" class="project-link"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a> -->
+                  <a href="https://github.com/ramisha28/Memory-Allocation-Visualizer" class="project-link"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card" data-category="mobile">
+              <div class="project-img">
+                <img src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Pet Mobile Application" />
+              </div>
+              <div class="project-content">
+                <h3>Pet Mobile Application</h3>
+                <p>
+                  A cross-platform mobile app using Flutter to manage pet
+                  profiles, health records, shop for products, and book vet
+                  appointments with a clean UI design.
+                </p>
+                <div class="project-tags">
+                  <span>Flutter</span>
+                  <span>Dart</span>
+                  <span>Material Design</span>
+                </div>
+                <div class="project-links">
+                  <!-- <a href="#" class="project-link"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a> -->
+                  <a href="https://github.com/ramisha28/Pet-App" class="project-link"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card" data-category="systems">
+              <div class="project-img">
+                <img
+                  src="https://images.unsplash.com/photo-1642055514517-7b52288890ec?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Pharmacy Management System"
+                />
+              </div>
+              <div class="project-content">
+                <h3>Pharmacy Management System</h3>
+                <p>
+                  A C++ based system leveraging Object-Oriented Programming
+                  techniques for managing medicine inventory, customer details,
+                  and transaction processing.
+                </p>
+                <div class="project-tags">
+                  <span>C++</span>
+                  <span>OOP</span>
+                  <span>File Handling</span>
+                </div>
+                <div class="project-links">
+                  <!-- <a href="#" class="project-link"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a> -->
+                  <a href="https://github.com/ramisha28/Pharmacy-Managment-System" class="project-link"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="experience">
+        <div class="container">
+          <h2 class="section-title">Experience & Education</h2>
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">Since 2022</div>
+              <div class="timeline-content">
+                <h3>BS Computer Engineering</h3>
+                <h4>COMSATS University Islamabad, Lahore Campus</h4>
+                <p>
+                  Currently pursuing a degree in Computer Engineering with a
+                  focus on programming and system development. Expected
+                  graduation: 2026.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">2024 - 2025</div>
+              <div class="timeline-content">
+                <h3>CDC Director of Fashion Designing</h3>
+                <h4>Team Head of Fashion Design</h4>
+                <p>
+                  Leading the fashion design team, coordinating design projects,
+                  and managing team activities to deliver successful fashion
+                  events.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">2024</div>
+              <div class="timeline-content">
+                <h3>Arbisoft & Fruitful Foundation</h3>
+                <h4>Mock Interviews & Welfare Intern</h4>
+                <p>
+                  Participated in mock interviews at Arbisoft and served as an
+                  intern at Fruitful Foundation assisting with welfare
+                  initiatives.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">2023</div>
+              <div class="timeline-content">
+                <h3>Welfare Work For NGO</h3>
+                <h4>Kar-E-Kamal</h4>
+                <p>
+                  Volunteered for community service and welfare activities,
+                  contributing to social causes and helping those in need
+                  through organized initiatives.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">2020 - 2022</div>
+              <div class="timeline-content">
+                <h3>ICS</h3>
+                <h4>Kinnaird College for Women (KCW), Lahore</h4>
+                <p>
+                  Completed Intermediate in Computer Science with a focus on
+                  programming fundamentals and computer applications.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">2018 - 2020</div>
+              <div class="timeline-content">
+                <h3>Matric</h3>
+                <h4>Garrison Academy for Girls, Lahore Cantt</h4>
+                <p>
+                  Completed matriculation with excellent academic performance
+                  and participation in extracurricular activities.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="container">
+          <h2 class="section-title">Get In Touch</h2>
+          <div class="contact-content">
+            <div class="contact-info">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-details">
+                  <h3>Email</h3>
+                  <p>ramishaikram72@gmail.com</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="contact-details">
+                  <h3>Location</h3>
+                  <p>Lahore, Pakistan</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div class="contact-details">
+                  <h3>Phone</h3>
+                  <p>+92 311 4599684</p>
+                </div>
+              </div>
+
+              <div class="social-links">
+                <a href="https://github.com/ramisha28" class="social-link"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/ramisha28/"
+                  class="social-link"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+                <!-- <a href="#" class="social-link"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a href="#" class="social-link"
+                  ><i class="fab fa-instagram"></i
+                ></a> -->
+              </div>
+            </div>
+
+            <div class="contact-form">
+              <form id="contactForm">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Your Name"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Your Email"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    placeholder="Subject"
+                  />
+                </div>
+                <div class="form-group">
+                  <textarea
+                    id="message"
+                    name="message"
+                    placeholder="Your Message"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn primary">Send Message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">RI</div>
+          <p>© 2023 Ramisha Ikram. All Rights Reserved.</p>
+          <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="scroll-to-top">
+      <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
 </html>
