@@ -140,24 +140,32 @@ document.addEventListener('DOMContentLoaded', function() {
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
-            
-            // Here you would typically send the form data to a server
-            // For demonstration, we'll just show a success message
-            
-            const formData = new FormData(contactForm);
-            let formValues = {};
-            
-            formData.forEach((value, key) => {
-                formValues[key] = value;
-            });
-            
-            console.log('Form submitted:', formValues);
-            
-            // Reset form after submission
+
+            // Collect form data
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const subject = document.getElementById('subject').value.trim();
+            const message = document.getElementById('message').value.trim();
+
+            // WhatsApp API integration
+            // Replace with your WhatsApp number (with country code, no + or spaces)
+            const phoneNumber = '923114599684';
+            // Compose the message
+            let whatsappMessage = `Name: ${name}%0AEmail: ${email}`;
+            if(subject) whatsappMessage += `%0ASubject: ${subject}`;
+            whatsappMessage += `%0AMessage: ${message}`;
+
+            // WhatsApp API URL
+            const whatsappURL = `https://wa.me/${phoneNumber}?text=${whatsappMessage}`;
+
+            // Redirect to WhatsApp
+            window.open(whatsappURL, '_blank');
+
+            // Optionally reset the form
             contactForm.reset();
-            
-            // Show success message (you could create a more sophisticated notification)
-            alert('Your message has been sent successfully!');
+
+            // Optionally show a message
+            alert('Redirecting to WhatsApp. Please send your message there!');
         });
     }
     
